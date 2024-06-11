@@ -1,0 +1,46 @@
+.sticky-menu-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+    
+}
+@media only screen and (max-width: 767px){
+    .sticky-menu-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 10px;
+        
+    }
+    .expert-traning p{
+        text-align: center;
+        font-size: 20px;
+    }
+    .htext {
+         
+        font-size: 24.5px;
+        
+    }
+    .item-in{
+        padding: 0;
+    }
+    .textblue{
+        font-size: 15px;
+
+    }
+    .elevate{
+        text-align: center;
+    }
+    .testimonial-hero{
+        text-align: center;
+    }
+
+    .carousel-indicators {
+        
+        display: block;
+        margin: -10px auto;
+    }
+    .carousel-content {
+         
+        min-height: 290px;
+    }
+  }
