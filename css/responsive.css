@@ -43,4 +43,8 @@
          
         min-height: 290px;
     }
+     .card-body h5{
+        font-size: 24px;
+         
+    }
   }
