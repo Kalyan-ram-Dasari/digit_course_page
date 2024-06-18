@@ -113,3 +113,30 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+// uidemo1
+
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.course-topics .btn');
+  const contentSections = document.querySelectorAll('.content-section');
+  const accordionCollapse = document.querySelector('#collapseOne');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const selectedContent = document.getElementById(button.id.replace('btn', '').toLowerCase() + 'Content');
+      
+      contentSections.forEach(section => {
+        section.classList.remove('active');
+      });
+
+      if (selectedContent) {
+        selectedContent.classList.add('active');
+      }
+
+      // Ensure the accordion is open
+      if (!accordionCollapse.classList.contains('show')) {
+        accordionCollapse.classList.add('show');
+      }
+    });
+  });
+});
