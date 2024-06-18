@@ -9,15 +9,17 @@
     .Content-text {
         color: #a2a2a2;
          
+         
     }
     .carousel-content {
          
-        min-height: 168px;
+        min-height: 192px;
+        margin: 0;
     }
 
     .htext {
         color: #e6e6e6;
-        font-size: 28px;
+        font-size: 38px;
         
     }
 
@@ -31,13 +33,14 @@
         width: 100%;
         z-index: 99;
         padding-top: 18px;
+        border-bottom: 1px solid #E5E5E5;
     }
 
     .bg-black {
 background-color: #000;
     }
 .banner-image {
-    background-image: url(https://img.freepik.com/free-photo/social-media-marketing-concept-marketing-with-applications_23-2150063136.jpg?t=st=1718135664~exp=1718139264~hmac=55c41d226ffdeb7d3653a73e1638635b6b6875a60e32f53edc4c05f9b3a8bebc&w=996);
+    background-image: url(/images/programming-background-with-person-working-with-codes-computer.jpg);
     background-size: cover;
     background-position: center;
    padding: 160px 0;
@@ -78,21 +81,23 @@ background-color: #000;
 }
 
 .btncolor {
-    background-image: linear-gradient(to right, #514A9D, #24C6DC, #24C6DC, #24C6DC);
-    margin: 7px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    border-radius: 10px;
+    background: linear-gradient(90deg, #8E2DE2, #4A00E0); /* Gradient background */
+    color: #FFFFFF; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 30px; /* Padding for size */
+    border-radius: 25px; /* Fully rounded corners */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center text */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
+    transition: background 0.3s, transform 0.3s; /* Smooth transition */
     display: block;
 }
 
 .btncolor:hover {
-    background-position: right center;
-    color: #e6e6e6;
-    text-decoration: none;
+    background: linear-gradient(90deg, #4A00E0, #8E2DE2); /* Reverse gradient on hover */
+    transform: translateY(-2px); /* Lift button on hover */
 }
 
  
@@ -106,7 +111,7 @@ background-color: #000;
     background-color: #0d6efd;
     padding: 16px 0;   
   position: sticky;
-  top:84px;
+  top:76px;
   z-index: 99;
 }
 
@@ -122,6 +127,7 @@ background-color: #000;
     text-decoration: none;
     color: #fff;
     padding-right: 16px;
+    font-size: 18px;
 
 }
 /* Expert-traning */
@@ -129,41 +135,13 @@ background-color: #000;
 
 .expert-traning {
     background-color: #101010;
+   padding-top: 50px;
+   
 }
  
  
  
-
-
-
-
-
-
-
-
-
-/* .bg-image {
-    position: relative;
-    padding-bottom: 40px;
- }
  
- .bg-shape1 {
-    position: absolute;
-    z-index: 0;
-    top: -40px;
-    left: -20px;
-    scale: 1.2;
- }
- 
- .bg-shape2 {
-    position: absolute;
-    z-index: 0;
-    top: -40px;
-    right: -18px;
-    scale: 1.3;
- } */
-
-
 
 
 
@@ -174,7 +152,7 @@ background-color: #000;
     background-color: #151515;
 }
 .ui-demo h1{
-    max-width: 700px;
+    max-width: 600px;
     text-align: center;
     margin: auto    ;
 }
@@ -201,19 +179,49 @@ background-color: #000;
     align-items: center;
     padding: 45px;
     background-color: #191919;
-    min-height: 292px;  
+    min-height: 292px; 
+    z-index: 1; 
      
     
 }
-/* 
+.hi i {
+     max-width: 35px; ; 
+     
+    
+}
 .great-at-body {
-    min-height: 100px;
-} */
+    min-height: 110px;
+} 
 .great-at-title{
     padding-top: 30px;
     font-size: 22px;
 }
+.card-size img{
+     height: 100px;
+     width: 100px;
+}
 
+
+.bg-image {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.bg-shape1 {
+    position: absolute;
+    z-index: 0;
+    top: -150px;
+    left: 40px;
+    transform: scale(1.1);
+}
+
+.bg-shape2 {
+    position: absolute;
+    z-index: 0;
+    top: -150px;
+    right: 40px;
+    transform: scale(1.1);
+}
 
 
 
@@ -229,20 +237,28 @@ background-color: #000;
 .countsbgcolor {
     background-color: #101010;
     color: #e6e6e6;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
      text-align: center;
     justify-content:center; 
     align-items:center;
      
+     
 }
 
 .counter-icon {
     background-color: #585858;
-    padding: 50px;
-    border-radius: 6px 70px 6px 70px;
+    padding: 30px;
+    border-radius: 4px 50px 4px 50px;
     font-size: 2.5rem;
-    color: #212529
+    color: #212529;
+    
+
+}
+ 
+.counter-icon .hi {
+   max-width: 35px;
 
 }
  
@@ -250,9 +266,10 @@ background-color: #000;
     text-align: left;
     padding-left: 20px;
     padding-top: 0;
+    padding-bottom: 0;
 }
 .card-body h5{
-    font-size: 36px;
+    font-size: 26px;
      
 }
 
@@ -261,15 +278,167 @@ background-color: #000;
     background-color: #101010;
 
 }
+.excel-img img{
+    height: 100vh;
+    max-height: 400px;
+    width: 100%;
+max-width: 550px;
+     
+}
+.excel-icon {
+ background-color: white;
+ padding: 15px;
+ color: #212529;
+ font-size: 2.5rem;
+ border-radius: 10px;
+ position: relative;
+ top: -25px;
+}
  
+
+
+
+
+
+
+/* uidemo1 start here */
+/* .uidemo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+.container1 {
+    width: 30rem;
+    max-width: 100%;
+} */
+
+
+
+
+
+
+
+
+
+.course-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .course-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .course-topics .btn {
+    font-size: 14px;
+    margin: 2px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .accordion-body {
+    padding: 1rem 1.25rem;
+    background-color: #101010;
+    color: #a2a2a2;
+  }
+  .acc-border {
+    border: 0;
+    box-shadow: none;
+  }
+
+  .accordion-button {
+    display: flex;
+    align-items: center;
+    color: #e6e6e6; 
+    background-color: #101010; 
+    border: none; 
+    position: relative; 
+    transition: none;
+  }
+  .accordion-button:focus {
+    box-shadow: none; 
+    outline: none; 
+  }
+
+  .accordion-button img {
+    margin-right: 15px;
+  }
+
+  .content-section {
+    display: none;
+  }
+
+  .content-section.active {
+    display: block;
+  }
+
+  .uidemo1 {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background-color: #151515;
+  }
+
+  .accordion-button.ui-development {
+    background-color: #101010;
+    color: #e6e6e6;
+  }
+  .accordion-button:not(.collapsed) {
+    color: #e6e6e6;  
+    background-color: #101010;  
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+    box-shadow: none;
+  }
+
+  .accordion {
+    --bs-accordion-color: #212529;
+    --bs-accordion-bg: #fff;
+    --bs-accordion-btn-color: #ffffff; 
+    --bs-accordion-btn-bg: #101010;
+    --bs-accordion-active-color: #ffffff;
+    --bs-accordion-active-bg: #101010;
+  }
+
+  .accordion-button::after {
+    content: '\25BC'; /* Arrow down */
+    font-size: 16px;
+    color: white; 
+    background-color: black; 
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    transition: transform 0.2s ease;
+    background-image:none;
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg); /* Rotate arrow up */
+  }
+  .accordion-item:last-of-type {
+    border: 0;
+}
+  .accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.accordion-button:not(.collapsed)::after {
+     background-image: none; 
+    transform: var(--bs-accordion-btn-icon-transform);
+}
  
-
-
-
-
-
-
-
+/* uidemo1 Ends here */
 
 
 
@@ -289,40 +458,59 @@ background-color: #000;
     padding-bottom: 20px;
   }
 
-  .textblue {
-    color: #0d6efd;
+  .testimonial-head{
+    max-width: 355px;
   }
 
   .carousel-control-next,
   .carousel-control-prev {
-   visibility: hidden;
+    visibility: hidden;
   }
-
+  
   .carousel-control-next:hover,
   .carousel-control-prev:hover {
     background: #0d6efd;
     color: white;
   }
-
+  
   .carousel-indicators {
     justify-content: flex-end;
     margin-right: 3em;
+    margin-bottom: 1em; /* Adjust this to move the indicators closer to the bottom */
+    position: absolute;
+    bottom: 0; /* Positions the indicators at the bottom */
+    right: 0;  /* Positions the indicators to the right */
   }
-
+  
   .carousel-indicators [data-bs-target] {
-    width: 10px;
-    height: 10px;
+    position: relative; /* Position relative to add inner dot */
+    width: 15px; /* Width for indicators */
+    height: 15px; /* Height for indicators */
     border-radius: 50%;
-    border: 2px solid #0d6efd;
+    border: none; /* No border for inactive indicators */
+    background-color: transparent; /* Transparent background */
   }
-
+  
+  .carousel-indicators [data-bs-target]::before {
+    content: ''; /* Empty content for inner dot */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the inner dot */
+    width: 6px; /* Width of the inner dot */
+    height: 6px; /* Height of the inner dot */
+    background-color: #0d6efd; /* Color of the inner dot */
+    border-radius: 50%; /* Make it a circle */
+  }
+  
   .carousel-indicators .active {
-    background-color: #0d6efd;
+    border: 2px solid #0d6efd; /* Border color for active indicator */
   }
-  .visually-hidden{
-
+  
+  .visually-hidden {
     visibility: hidden;
   }
+  
 /* ui demo content */
 
 
@@ -570,7 +758,7 @@ background-color: #000;
 
 .footer-content {
     max-width: 1230px;
-    margin: 10px auto;
+    margin: 0 auto;
     padding: 40px 15px;
 
 }
