@@ -13,26 +13,31 @@ window.addEventListener('scroll', function () {
 
 //counts
 window.addEventListener('scroll', () => {
-    if (window.scrollY = 25) {
-        function counter(id, start, end, duration) {
-                 let obj = document.getElementById(id),
-                  current = start,
-                  range = end - start,
-                  increment = end > start ? 1 : -1,
-                  step = Math.abs(Math.floor(duration / range)),
-                  timer = setInterval(() => {
-                   current += increment;
-                   obj.textContent = current + "+";
-                   if (current == end) {
-                    clearInterval(timer);
-                   }
-                  }, step);
-                }
-                counter("stud_count", 0, 1000, 1);
-                counter("realtime_count", 0, 50, 150);
-                counter("placed_count", 0, 1200, 1);
-    }
-})
+  if (window.scrollY >= 25) {
+    const counters = [
+      { id: 'stud_count', start: 0, end: 1000, duration: 1000 },
+      { id: 'realtime_count', start: 0, end: 50, duration: 500 },
+      { id: 'placed_count', start: 0, end: 1200, duration: 1000 }
+    ];
+
+    counters.forEach(counter => {
+      const obj = document.getElementById(counter.id);
+      let startTime = null;
+
+      function animate(timestamp) {
+        if (!startTime) startTime = timestamp;
+        const progress = Math.min((timestamp - startTime) / counter.duration, 1);
+        const value = Math.floor(counter.start + (counter.end - counter.start) * progress);
+        obj.textContent = value + "+";
+        if (progress < 1) {
+          requestAnimationFrame(animate);
+        }
+      }
+
+      requestAnimationFrame(animate);
+    });
+  }
+});
 
 
 
