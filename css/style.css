@@ -40,16 +40,15 @@
 background-color: #000;
     }
 .banner-image {
-    background-image: url(<a href="/images/programming-background-concept.jpg">Image by freepik</a>);
+    background-image: url(/images/programming-background-concept.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top center;
    padding: 160px 0;
    display: flex;
    justify-content: center;
    align-items: center;
    position: relative;
 }
-
 .banner-image::before {
     content: "";
     position: absolute;
