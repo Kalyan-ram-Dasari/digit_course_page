@@ -40,7 +40,7 @@
 background-color: #000;
     }
 .banner-image {
-    background-image: url(<a href="images/programming-background-concept.jpg">Image by freepik</a>);
+    background-image: url(<a href="/images/programming-background-concept.jpg">Image by freepik</a>);
     background-size: cover;
     background-position: center;
    padding: 160px 0;
