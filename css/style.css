@@ -40,7 +40,7 @@
 background-color: #000;
     }
 .banner-image {
-    background-image: url(/images/programming-background-concept.jpg);
+    background-image: url('/images/programming-background-concept.jpg');
     background-size: cover;
     background-position: top center;
    padding: 160px 0;
